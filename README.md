@@ -15,7 +15,7 @@ Features:
 - Ongoing additions and improvements particularly in visualizations, games
 
 
-For library usage instructions, see /docs/DOCUMENTATION
+For library usage instructions, see DOCUMENTATION
 
 More info about this project can be found at www.engagescience.org
 
