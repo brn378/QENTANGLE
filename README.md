@@ -1,7 +1,7 @@
-# entangled
-Entangled - quantum education library
+# QENTANGLE
+QENTANGLE - quantum education library
 
-Entangled Quantum Education Library
+QENTANGLE Quantum Education Library
 ==========================
 A simple Python 3.11 library to introduce quantum computing concepts to G6-12/post-secondary students.  A companion to the Entangled: Jasmine & the Quantum Sword educational program by the Center for Science Engagement. 
 This library provides basic quantum gates, quantum circuits, and entanglement operations.
