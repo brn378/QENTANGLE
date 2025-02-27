@@ -151,7 +151,7 @@ Example Output:
 State |00> : 0.50
 State |11> : 0.50
 6. Running the Script from the Command Line
-You can go to the github and download the main library file, and run the entire library as a standalone script to see entanglement in action:
+You can go to the github repo page and download the main library file, and run the entire library as a standalone script to see entanglement in action:
  
 
 Create a Bell pair for 2 qubits.
