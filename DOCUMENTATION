@@ -1,0 +1,60 @@
+List of basic QENTANGLE library functions and their usage.
+
+Quantum Gates
+These functions return common quantum gates as NumPy arrays.
+
+I() – Identity Gate
+Returns the Identity matrix, which has no effect on a qubit.
+
+
+print(I())  # Outputs [[1, 0], [0, 1]]
+H() – Hadamard Gate
+Creates superposition, mapping |0⟩ → (|0⟩ + |1⟩)/√2.
+
+
+print(H())  # Outputs the Hadamard matrix
+X() – Pauli-X (NOT) Gate
+Flips |0⟩ to |1⟩ and vice versa.
+
+
+print(X())  # Outputs the Pauli-X matrix
+CNOT() – Controlled-NOT Gate
+Flips the target qubit only if the control qubit is |1⟩.
+
+
+print(CNOT())  # Outputs the CNOT gate matrix
+Quantum Circuit Class
+The QuantumCircuit class allows users to create and manipulate quantum circuits.
+
+1. Create a Quantum Circuit
+
+qc = QuantumCircuit(2)  # Create a 2-qubit circuit
+2. Apply a Quantum Gate
+
+qc.apply_gate(H, 0)  # Apply Hadamard gate to qubit 0
+3. Apply a CNOT Gate
+
+qc.cnot(0, 1)  # Apply CNOT with qubit 0 as control and qubit 1 as target
+4. Create a Bell Pair
+Creates an entangled Bell state: (|00⟩ + |11⟩) / √2
+
+
+qc.create_bell_pair()
+qc.simulate()
+5. Create a GHZ State
+Creates a multi-qubit entangled state: (|000⟩ + |111⟩) / √2
+
+
+qc2 = QuantumCircuit(3)
+qc2.create_ghz_state()
+qc2.simulate()
+6. Draw the Circuit
+Displays the sequence of gates applied.
+
+
+qc.draw()
+7. Simulate the Circuit
+Prints the probability distribution of quantum states.
+
+
+qc.simulate()
