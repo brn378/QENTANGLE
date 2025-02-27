@@ -1,5 +1,5 @@
 
-List of basic Entangled library functions and their usage.
+List of basic QENTANGLE library functions and their usage.
 
 Quantum Gates
 These functions return common quantum gates as NumPy arrays.
